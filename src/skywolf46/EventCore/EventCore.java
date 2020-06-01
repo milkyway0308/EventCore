@@ -5,7 +5,7 @@ import skywolf46.EventCore.TaskProvider.Thread.TestThread;
 
 public class EventCore {
     public static void main(String[] args) {
-        TaskPool tp = new TaskPool(7);
+        TaskPool tp = new TaskPool(20);
         for (int i = 0; i < 10; i++){
 //            System.out.println(i);
             new TestThread(tp).start();
